@@ -1,0 +1,117 @@
+<html>
+<head>
+<title> Home Page </title>
+<link rel="stylesheet" type="text/css" href="navigation.css"/>
+<style>
+.parallax, header {
+  /* The image used */
+  background-image: url("image/star.jpeg");
+
+  /* Set a specific height */
+  height: 150px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+
+<!-- Container element -->
+<div class="parallax"></div>
+<style>
+body {
+  background: #f2f2f2;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+</style>
+</head>
+<body>
+<header align="center" style="font-size:25px">
+<br>
+<h1 style="color:white;" style="font-size:30px"> Welcome to My Personal Website!!! </h1> 
+</header>
+<ul style="font-size:20px">
+<li> <a href="index.html"><b> Home Page </b></a></li>
+<li> <a href="biodata.html"><b> Biodata </b></a></li>
+<li> <a href="experience.html"><b> Experience </b></a></li>
+<li> <a href="education.html"><b> Education </b></a></li>
+<li> <a href="family.html"><b> Family </b></a></li>
+<li> <a href="gallery.html"><b> Gallery </b></a></li> 
+<li> <a href="others.html"><b> Other necessary pages </b></a></li>
+</ul>
+
+<marquee direction="left" height="50" width="1330" bgcolor="white" style="font-size:30px"> 
+Assalamualaikum, Thanks for coming to my very first personal website ever!!!</marquee>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+<br>
+<p align="center" style="font-family:'comic sans ms'"><b> Good morning, afternoon and evening (depends on what time it is)
+<br>
+I just want to say thanks because you guys visit my first ever website in my entire life.
+<br>
+Usually, I did not disclose about my private life because it is my life but this website is another chance for me to go out of my comfort zone and be an extra me.
+<br> 
+Feel free to explore this website and please tell me about your feedback later. >_< . 
+<br>
+Really appreciate it.
+<br>
+Thank you so much and I hope that you'll love my work.
+<br>
+<br>
+Thank you again...
+</b>
+</p>
+
+
+
+<div style="text-align:center;padding:1em 0;"> <h3><a style="text-decoration:none;" href="https://www.zeitverschiebung.net/en/city/1735161"><span style="color:gray;">
+Current local time in</span><br />
+Kuala Lumpur, Malaysia</a></h3> <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=medium&timezone=Asia%2FKuala_Lumpur" 
+width="100%" height="115" frameborder="0" seamless></iframe> </div>
+
+
+</body>
+</html>

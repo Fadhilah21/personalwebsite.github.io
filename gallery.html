@@ -1,0 +1,439 @@
+<html>
+<head>
+<title> Gallery </title>
+<link rel="stylesheet" type="text/css" href="navigation.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.parallax, header {
+  background-image: url("image/star3.jpg");
+
+  height: 150px;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+
+<!-- Container element -->
+<div class="parallax"></div>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+#container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+</style>
+<style>
+body {
+  background: #f2f2f2;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+</style>
+</head>
+<body>
+
+<header align="center" style="font-size:25px">
+<br>
+<h1 style="color:white;" style="font-size:30px"> Gallery - Pictures of My Life </h1> 
+</header>
+
+<ul style="font-size:20px">
+<li> <a href="index.html"><b> Home Page </b></a></li>
+<li> <a href="biodata.html"><b> Biodata </b></a></li>
+<li> <a href="experience.html"><b> Experience </b></a></li>
+<li> <a href="education.html"><b> Education </b></a></li>
+<li> <a href="family.html"><b> Family </b></a></li>
+<li> <a href="gallery.html"><b> Gallery </b></a></li> 
+<li> <a href="others.html"><b> Other necessary pages </b></a></li>
+</ul>
+
+<audio controls autoplay loop> 
+<source src="audio/Braveheart - Main Theme.mp3" type="audio/mpeg">
+</audio>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+<div style="text-align:center">
+  <h2> Random Collection of Picture </h2>
+  <p> Welcome, welcome and welcome </p>
+</div>
+
+<br>
+<div style="text-align:center">
+  <h2> 2002 - 2012 </h2>
+</div>
+<br>
+
+<div class="row">
+  <div class="column">
+    <img src="image/kecik.jpg" alt="Small me" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/kudapink.jpg" alt="With neighbour" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/bomba.jpg" alt="2011" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/kakadek7.jpg" alt="Home Sweet Home" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<br>
+<div style="text-align:center">
+  <h2> 2013 - 2014 - 2015 </h2>
+</div>
+<br>
+<div class="row">
+  <div class="column">
+    <img src="image/pantai_tb.jpg" alt="At Pantai Teluk Bahang" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/beca 1.jpg" alt="Beca - unloaded " style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/camp.jpg" alt="Education Camp" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/class_14.jpg" alt="Class of 2014" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="image/pengetua1.jpg" alt="Standby with Pengetua" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/biru2.jpg" alt="Fadhilah & Dayana " style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/biru3.jpg" alt="Fadhilah, Dayana, Izzah A" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/klcc.jpg" alt="KLCC_Christmas Tree" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div style="text-align:center">
+  <h2> 2016 </h2>
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="image/asrama1.jpg" alt="A year before SPM" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/kelantan2.jpg" alt="Bluekkkkk!!! " style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/kelas2.jpg" alt="Another pic b4 SPM" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/kelantan1.jpg" alt="Senior and Junior" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="image/toyota.jpg" alt="8 People 1 Car" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/makan1.jpg" alt="Cikgu's treats" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/kelantan3.jpg" alt="Form 5, 4, 3" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/kelas1.jpg" alt="Gegirls" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+    
+<div style="text-align:center">
+  <h2> 2017 </h2>
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="image/eco.jpg" alt="Eco opening day" style="width:100%" onclick="myFunction(this);">
+</div>
+  <div class="column">
+    <img src="image/bintang.jpg" alt="We're Like stars" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/camp2.jpg" alt="Camp at Pendang" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/segantang.jpg" alt="Segantang Garam" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="image/denda.jpg" alt="After this picture, we have 'denda'" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/cikgu2.jpg" alt="Penang Run 2017" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/cikgu3.jpg" alt="Jaya Waris '17" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/cikgu4.jpg" alt="Teachers of 4&5 Arif" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div class="row">
+  <div class="column"> 
+    <img src="image/cikgu1.jpg" alt="Tuition Add Math" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+<img src="image/senamrobik2.jpg" alt="Picture with Pengetua is important" style="width:100%" style="height:50%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/addmath3.jpg" alt="Add Math's memory" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/camp3.jpg" alt="Camp at Pendang 2" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="image/cikgu3.jpg" alt="Jaya Waris" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/cikgu4.jpg" alt="Sambutan Hari Raya '17" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/girl3.jpg" alt="Waiting for parents be like" style="width:100%" style="height:50%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/makan1.jpg" alt="Teacher's treats" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div style="text-align:center">
+  <h2> Cameron highlands </h2>
+
+<div class="row">
+  <div class="column">
+    <img src="image/ch1.jpg" alt="Steambot - Restaurant Taman Abang" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/ch2.jpg" alt="With Cikgu Umi and Cigu Rashidah" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/ch3.jpg" alt="In the middle of Tea Field" style="width:100%" style="height:50%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/ch4.jpg" alt="Don't forget to smile" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="image/ch5.jpg" alt="In the middle of nowhere" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/ch6.jpg" alt="Check-out day" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/ch7.jpg" alt="We love Cameron Highlands" style="width:100%" style="height:50%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/ch8.jpg" alt="Form 5" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div style="text-align:center">
+  <h2> 2018 </h2>
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="image/iftar.jpg" alt="Iftar and shoping" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/wayang.jpg" alt="Wayang day" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/orentasi.jpg" alt="With my roomates" style="width:100%" style="height:50%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/2018.jpg" alt="Batch 2018" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div style="text-align:center">
+  <h2> 2019 </h2>
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="image/3.jpg" alt="2 same, 1 not" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/girls1.jpg" alt="Gang" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/girls.jpg" alt="My fwend" style="width:100%" style="height:50%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/art.jpg" alt="It is beautiful?" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="image/sukan.jpg" alt="after event" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/keluar.jpg" alt="How come everyone wear same color??" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/kupon.jpg" alt="Demi kupon - senamrobik" style="width:100%" style="height:50%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/diyanah.jpg" alt="Tiba2" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div style="text-align:center">
+  <h2> Video </h2>
+</div>
+
+<video width="400" controls>
+  <source src="video/kelas.mp4" type="video/mp4">
+</video>
+
+<video width="400" controls>
+  <source src="video/dewan.mp4" type="video/mp4">
+</video>
+<br>
+<br>
+<video width="400" controls>
+  <source src="video/raya2017.mp4" type="video/mp4">
+</video>
+
+<video width="400" controls>
+  <source src="video/afterevent.mp4" type="video/mp4">
+</video>
+
+<div id="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+<br>
+<br>
+<br>
+
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+
+
+
+</div>
+</body>
+</html>

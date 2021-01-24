@@ -1,0 +1,423 @@
+<html>
+<head>
+<title> Family </title>
+<link rel="stylesheet" type="text/css" href="navigation.css"/>
+<style>
+.parallax, header {
+  /* The image used */
+  background-image: url("image/star.jpeg");
+
+  /* Set a specific height */
+  height: 150px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+
+<!-- Container element -->
+<div class="parallax"></div>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+
+</style>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+text-align: center;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+<style>
+body {
+  background: #cce6ff;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+</style>
+</head>
+<body>
+<header align="center" style="font-size:25px">
+<br>
+<h1 style="color:white;" style="font-size:30px"> Family, my treasures </h1> 
+</header>
+<ul style="font-size:20px">
+<li> <a href="index.html"><b> Home Page </b></a></li>
+<li> <a href="biodata.html"><b> Biodata </b></a></li>
+<li> <a href="experience.html"><b> Experience </b></a></li>
+<li> <a href="education.html"><b> Education </b></a></li>
+<li> <a href="family.html"><b> Family </b></a></li>
+<li> <a href="gallery.html"><b> Gallery </b></a></li> 
+<li> <a href="others.html"><b> Other necessary pages </b></a></li>
+</ul>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+<br>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="image/family.jpg" style="width:80%">
+  <div class="text">Hari Raya 2016</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="image/family1.jpg" style="width:80%">
+  <div class="text">Aqiqah Anggun - Cucu kak ayah </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="image/family2.jpg" style="width:80%">
+  <div class="text"> Family of four plus Anggun </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <img src="image/family4.jpg" style="width:80%">
+  <div class="text"> Ayah and Mak </div>
+</div>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+<ol type="1">
+<b><li> Ayah </li></b>
+<br>
+<pre>
+Name	      : Ibrahim bin Abdul Kader
+Ages          : 60 years old
+Occupation    : Atendan Kesihatan
+Date of Birth : 24 May 1961
+Birth Place   : Malacca
+Childhood
+place         : Jelutong, Pulau Pinang
+Father's name : Abdul Kader bin Naina Merican
+Mother's name : Milah bte Abdul Rahman 
+Date of Die   : 12 January 2019
+Place of Death: Hospital Kepala Batas
+Reasons       : Heart Attack
+Favourite food: Nasi Kandar, Mee Goreng
+Memorable Word:
+'kak, bukak tv2, ayah nak tengok P.Ramlee'
+'kak, tv3, ayah nak tengok hindustan'
+'kak, tv2, ayah nak tengok cerita tamil'
+(thats why I love this kind of story, i am one of the old soul trapped in young body =D)
+
+"kak, masak apa?"
+"kak masak gulai ayam"
+"sedap dak?"
+"sedap2x"
+(always compliment me when I ask)
+
+'kak, milo ada dak gi' 
+(when I stay in hotel, my milo stock always full'
+
+me  :"adik2x, tengok ayah kat situ"
+adik:"mana2x"
+us  :open car's window, extend our hand, waving our hand while shout "ayahhhhh"
+Ayah response with his legend motor "pin, pin (smile face)"
+</pre>
+<br>
+- Ayah, although rarely show love but we always know.- 
+<br>
+<br>
+<div class="row">
+  <div class="column">
+    <img src="image/ayahkecik.jpg" alt="Black and White" style="width:100%">
+<div class="desc"> Half of Ayah's family </div>  
+</div>
+  <div class="column">
+    <img src="image/ayah1.jpg" alt="Ayahh" style="width:100%">
+<div class="desc"> Wedding day </div>  
+</div>
+  <div class="column">
+    <img src="image/ayah.jpg" alt="Ayah" style="width:100%">
+<div class="desc"> At Aunty Com's house </div>  
+</div>
+  <div class="column">
+    <img src="image/familyayah.jpg" alt="Family Ayah" style="width:100%">
+<div class="desc"> Ayah, step-family, friends </div>  
+</div>
+</div>
+
+<b><li> Mak </li></b> 
+<br>
+<pre>
+Name	      : Soleha binti Abdullah
+Ages          : 60 years old
+Occupation    : KAFA's teacher (Retiree) 
+Date of Birth : 03 January 1961
+Birth Place   : Pulau Pinang
+Father's name : Abdullah bin Saad bin Haji Sadak bin Haji Sahak
+Mother's name : Che Mah binti Saad
+Siblings      : Three from four 
+Favourite food: Nasi Ayam 
+Favouritedrink: Teh O Ais Limau, Sirap Limau
+</pre> 
+- Mak, no matter how angry she is, love is still love -
+<br> 
+<br>
+<div class="row">
+  <div class="column">
+    <img src="image/berdua.jpg" alt="Ayah and Mak" style="width:100%">
+<div class="desc"> Ayah and Mak </div>  
+</div>
+  <div class="column">
+    <img src="image/kahwin.jpg" alt="Kahwin" style="width:100%">
+<div class="desc"> Wedding day </div>  
+</div>
+  <div class="column">
+    <img src="image/ayahfamily.jpg" alt="Ayah Family" style="width:100%">
+<div class="desc"> Family Ayah n Mak </div>  
+</div>
+  <div class="column">
+    <img src="image/family3.jpg" alt="Mak, Kak, Adek" style="width:100%">
+<div class="desc"> Mak, Kak, Adek </div>  
+</div>
+</div>
+
+<b><li> Kakak </li></b>
+<br>
+<pre>
+Name	      : Siti Nurfaizah binti Soleha
+Ages          : 60 years old
+Occupation    : Atendan Kesihatan
+Date of Birth : 04 May 1999
+Birth Place   : Hospital Seberang Jaya, Pulau Pinang
+Date of Die   : Three months after birth
+Place of Death: Kampung Setol
+Reasons       : Demam Kuning
+</pre>
+<br>
+- Kakak, although we never met, but the name is always in the heart - 
+<br>
+<br>
+
+<b><li> Kak - Me </li></b>
+<br>
+<pre>
+- You can click <i><a href="biodata.html"> here </i></a> to view my biodata - 
+</pre>
+<br>
+<br>
+<div class="row">
+  <div class="column">
+    <img src="image/kakadek.jpg" alt="Kak n adek" style="width:100%">
+<div class="desc"> Fadhilah and Atiqah </div>  
+</div>
+  <div class="column">
+    <img src="image/kakadek1.jpg" alt="kak adek main" style="width:100%">
+<div class="desc"> With cousin's children </div>  
+</div>
+  <div class="column">
+    <img src="image/kakadek4.jpg" alt="anak sepupu" style="width:100%">
+<div class="desc">  With cousin's children 2.0  </div>  
+</div>
+  <div class="column">
+    <img src="image/kakadek6.jpg" alt="kakadek" style="width:100%">
+<div class="desc"> Kak and Adek </div>  
+</div>
+</div>
+
+<b><li> Adik </li></b>
+<br>
+<pre>
+Name	      : Siti Nuratiqah binti Ibrahim
+Ages          : 20 years old
+Date of Birth : 28 October 2001
+Birth Place   : Hospital SEberang Jaya, Pulau Pinang
+Favourite food: Nasi Ayam 
+Favouritedrink: Tomato Juice, Carrot Susu
+</pre>
+- Adek, no matter how naughty you are, still the rock and diamond in our heart - 
+<br>
+<br>
+<div class="row">
+  <div class="column">
+    <img src="image/adik.jpg" alt="Atiqah" style="width:100%">
+<div class="desc">Siti Nuratiqah </div>  
+</div>
+  <div class="column">
+    <img src="image/baby.jpg" alt="small adek" style="width:100%">
+<div class="desc"> A few months after birth </div>  
+</div>
+  <div class="column">
+    <img src="image/adik1.jpg" alt="slim" style="width:100%">
+<div class="desc">  Slim Atiqah  </div>  
+</div>
+  <div class="column">
+    <img src="image/adik2.jpg" alt="topi rimau" style="width:100%">
+<div class="desc"> Adek and Harimau </div>  
+</div>
+</div>
+
+<audio controls autoplay loop> 
+<source src="audio/Main Shayar To Nahin -  Bobby - 1973.mp3" type="audio/mpeg">
+</audio>
+<br>
+<br>
+Why this song? Well because ayah, mak and I love to see this film. (Bobby - 1973)
+<br>
+<br>
+</ol>
+</body>
+</html>
